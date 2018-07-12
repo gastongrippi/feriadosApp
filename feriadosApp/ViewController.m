@@ -32,11 +32,10 @@
     self.textfieldSwitch.text = @"";
 }
 - (IBAction)navegarASegundaVista:(id)sender {
-//    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"secondView" bundle:nil];
-//    secondViewController *myNewVC = (secondViewController *)[storyboard instantiateViewControllerWithIdentifier:@"secondViewController"];
-//    [self.navigationController presentViewController:myNewVC animated:YES completion:nil];
-    secondViewController *svw =[[secondViewController alloc]initWithNibName:nil bundle:nil];
-    [self.navigationController presentViewController:svw animated:YES completion:nil];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"secondView" bundle:nil];
+    secondViewController *myNewVC = (secondViewController *)[storyboard instantiateViewControllerWithIdentifier:@"secondViewController"];
+    [self.navigationController presentViewController:myNewVC animated:YES completion:nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
